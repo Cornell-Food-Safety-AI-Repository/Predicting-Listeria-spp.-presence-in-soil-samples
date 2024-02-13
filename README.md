@@ -14,3 +14,18 @@ Please cite this paper when using this dataset.
 | KNN (k-Nearest Neighbors)    | - | 1.263                | 0.707    | 0.736     | 0.741  | 0.738    |
 | Gradient Boosting Classifier | - | 1.263                | 0.811    | 0.723     | 0.922  | 0.810    |
 | Decision Tree              | -  | 1.263                | 0.807    | 0.819     | 0.849  | 0.834    |
+
+# Confusion Matrix Results for Various ML Algorithms
+
+The following table details the confusion matrix results for each machine learning algorithm tested. These results provide insights into each model's ability to correctly predict the true positives and true negatives, as well as the instances of false positives and false negatives.
+
+| Algorithm | True Negatives | False Positives | False Negatives | True Positives |
+|-----------|----------------|-----------------|-----------------|----------------|
+| Neural Network | 90 | 20 | 27 | 112 |
+| Logistic Regression | 77 | 33 | 30 | 109 |
+| SVM (Support Vector Machine) | 69 | 41 | 26 | 113 |
+| KNN (k-Nearest Neighbors) | 73 | 37 | 36 | 103 |
+| Gradient Boosting Classifier | 84 | 26 | 21 | 118 |
+| Decision Tree | 90 | 20 | 28 | 111 |
+
+*Note: These results are indicative of the model's performance on the dataset, reflecting the balance between sensitivity (recall) and specificity.*
