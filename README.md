@@ -29,4 +29,5 @@ The following table details the confusion matrix results for each machine learni
 | Decision Tree | 90 | 20 | 28 | 111 |
 
 *Note: These results are indicative of the model's performance on the dataset, reflecting the balance between sensitivity (recall) and specificity.*
-![Performance Curves for ML Algorithms](ml_algorithms_performance_curve_vivid.png)
+<img src="path/to/your/repo/ml_algorithms_performance_curve_vivid.png" width="600">
+
