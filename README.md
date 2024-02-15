@@ -30,4 +30,4 @@ The following table details the confusion matrix results for each machine learni
 
 *Note: These results are indicative of the model's performance on the dataset, reflecting the balance between sensitivity (recall) and specificity.*
 <img src="ml_algorithms_performance_curve_vivid.png" width="600">
-
+<img src="ml_algorithms_confusion_matrix.png" width="600">
