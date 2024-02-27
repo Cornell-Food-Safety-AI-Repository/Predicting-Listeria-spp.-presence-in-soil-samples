@@ -31,28 +31,19 @@ python main.py --file_path=<path_to_your_dataset> --algorithm=<algorithm_name> -
 ```
 Replace <path_to_your_dataset> with the path to your data file and <algorithm_name> with one of the supported algorithms listed below.
 ## Supported Algorithms
-logistic_regression: Logistic Regression
-
-neural_network: Neural Network
-
-decision_tree: Decision Tree
-
-svm: Support Vector Machine
-
-knn: K-Nearest Neighbors
-
-gbm: Gradient Boosting Machine
+1. logistic_regression: Logistic Regression
+2. neural_network: Neural Network
+3. decision_tree: Decision Tree
+4. svm: Support Vector Machine
+5. knn: K-Nearest Neighbors
+6. gbm: Gradient Boosting Machine
 ## Dependencies
 This project is built using Python and relies on several libraries for data processing and machine learning:
-Pandas
-
-Numpy
-
-Scikit-learn
-
-Keras
-
-TensorFlow
+1.Pandas
+2.Numpy
+3.Scikit-learn
+4.Keras
+5.TensorFlow
 # Performance of Various Models on the Dataset
 
 | Algorithm              | Epochs | Positive-Negative Ratio | Accuracy | Precision | Recall | F1 Score |
