@@ -4,6 +4,22 @@
 
 📖 This dataset is sourced from the publication "**Liao, J., Guo, X., Weller, D.L. et al. Nationwide genomic atlas of soil-dwelling Listeria reveals effects of selection and population ecology on pangenome evolution. Nat Microbiol 6, 1021–1030 (2021). https://doi.org/10.1038/s41564-021-00935-7**". 
 Please cite this paper when using this dataset.
+# Listeria Food Environment Analysis
+
+## Overview
+
+This project utilizes machine learning algorithms to analyze and predict Listeria contamination in food environments. Aimed at food safety researchers and public health officials, it provides a comprehensive toolkit for understanding patterns of Listeria outbreaks and formulating preventive measures. 
+
+## Installation
+
+To get started with this project, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/FoodDatasets/ListeriaFoodEnvironment.git
+cd ListeriaFoodEnvironment
+
 # Performance of Various Models on the Dataset
 
 | Algorithm              | Epochs | Positive-Negative Ratio | Accuracy | Precision | Recall | F1 Score |
