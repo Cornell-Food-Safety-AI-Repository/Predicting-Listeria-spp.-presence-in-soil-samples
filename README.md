@@ -32,10 +32,15 @@ python main.py --file_path=<path_to_your_dataset> --algorithm=<algorithm_name> -
 Replace <path_to_your_dataset> with the path to your data file and <algorithm_name> with one of the supported algorithms listed below.
 ## Supported Algorithms
 logistic_regression: Logistic Regression
+
 neural_network: Neural Network
+
 decision_tree: Decision Tree
+
 svm: Support Vector Machine
+
 knn: K-Nearest Neighbors
+
 gbm: Gradient Boosting Machine
 
 # Performance of Various Models on the Dataset
