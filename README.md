@@ -42,7 +42,17 @@ svm: Support Vector Machine
 knn: K-Nearest Neighbors
 
 gbm: Gradient Boosting Machine
+## Dependencies
+This project is built using Python and relies on several libraries for data processing and machine learning:
+Pandas
 
+Numpy
+
+Scikit-learn
+
+Keras
+
+TensorFlow
 # Performance of Various Models on the Dataset
 
 | Algorithm              | Epochs | Positive-Negative Ratio | Accuracy | Precision | Recall | F1 Score |
