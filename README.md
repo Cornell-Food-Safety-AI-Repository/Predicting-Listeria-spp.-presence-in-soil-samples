@@ -24,12 +24,7 @@ cd ListeriaFoodEnvironment
 ```bash
 pip install -r requirements.txt
 ```
-## Usage
-This project supports various machine learning algorithms for analyzing food environment datasets. To use the project, run the main script with the desired algorithm and parameters:
-```bash
-python main.py --file_path=<path_to_your_dataset> --algorithm=<algorithm_name> --test_size=0.2 --random_state=42 --epochs=100 --batch_size=10
-```
-Replace <path_to_your_dataset> with the path to your data file and <algorithm_name> with one of the supported algorithms listed below.
+
 ## Supported Algorithms
 1. logistic_regression: Logistic Regression
 2. neural_network: Neural Network
@@ -44,6 +39,36 @@ This project is built using Python and relies on several libraries for data proc
 3.Scikit-learn  
 4.Keras  
 5.TensorFlow  
+# Machine Learning Model Execution Guide
+
+This script allows users to select different machine learning algorithms via command line parameters to train models and evaluate them on a specified dataset.
+
+## How to Run
+
+Use the following command line format to run this script:
+```bash
+python script_name.py --file_path PATH_TO_YOUR_CSV --algorithm ALGORITHM_NAME [--test_size TEST_SIZE] [--random_state RANDOM_STATE] [--epochs EPOCHS] [--batch_size BATCH_SIZE]
+```
+### Parameter Explanation
+- `--file_path` (required): The path to your CSV file.
+- `--algorithm` (required): The algorithm to use. Options include `logistic_regression`, `neural_network`, `decision_tree`, `svm`, `knn`, `gbm`.
+- `--test_size` (optional): The proportion of the dataset to include in the test split, between 0 and 1. Default is 0.2.
+- `--random_state` (optional): The random state for `train_test_split`. Default is 42.
+- `--epochs` (optional): If the selected algorithm is a neural network, this parameter specifies the number of epochs for training. Default is 100.
+- `--batch_size` (optional): If the selected algorithm is a neural network, this parameter specifies the batch size. Default is 10.
+
+### Usage Example
+
+If you want to use logistic regression on a file named `data.csv` with a test size of 0.25, use the following command:
+```bash
+python script_name.py --file_path data.csv --algorithm logistic_regression --test_size 0.25
+```
+If your chosen algorithm is a neural network and you wish to set epochs to 200 and batch_size to 20, the command is:
+```bash
+python script_name.py --file_path data.csv --algorithm neural_network --epochs 200 --batch_size 20
+```
+Adjust the above commands according to your actual file paths and parameters.
+
 # Performance of Various Models on the Dataset
 
 | Algorithm              | Epochs | Positive-Negative Ratio | Accuracy | Precision | Recall | F1 Score |
