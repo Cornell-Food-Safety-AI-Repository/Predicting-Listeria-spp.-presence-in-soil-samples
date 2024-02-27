@@ -39,12 +39,11 @@ Replace <path_to_your_dataset> with the path to your data file and <algorithm_na
 6. gbm: Gradient Boosting Machine
 ## Dependencies
 This project is built using Python and relies on several libraries for data processing and machine learning:
-
-1.Pandas
-2.Numpy
-3.Scikit-learn
-4.Keras
-5.TensorFlow
+1.Pandas  
+2.Numpy  
+3.Scikit-learn  
+4.Keras  
+5.TensorFlow  
 # Performance of Various Models on the Dataset
 
 | Algorithm              | Epochs | Positive-Negative Ratio | Accuracy | Precision | Recall | F1 Score |
