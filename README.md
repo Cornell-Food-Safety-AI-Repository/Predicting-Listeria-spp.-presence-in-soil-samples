@@ -47,15 +47,14 @@ This script allows users to select different machine learning algorithms via com
 
 Use the following command line format to run this script:
 ```bash
-python script_name.py --file_path PATH_TO_YOUR_CSV --algorithm ALGORITHM_NAME [--test_size TEST_SIZE] [--random_state RANDOM_STATE] [--epochs EPOCHS] [--batch_size BATCH_SIZE]
+python ml_algorithms_runner.py --file_path <path_to_your_data.csv> --algorithm <algorithm_name> [options]
+
 ```
 ### Parameter Explanation
 - `--file_path` (required): The path to your CSV file.
 - `--algorithm` (required): The algorithm to use. Options include `logistic_regression`, `neural_network`, `decision_tree`, `svm`, `knn`, `gbm`.
-- `--test_size` (optional): The proportion of the dataset to include in the test split, between 0 and 1. Default is 0.2.
-- `--random_state` (optional): The random state for `train_test_split`. Default is 42.
-- `--epochs` (optional): If the selected algorithm is a neural network, this parameter specifies the number of epochs for training. Default is 100.
-- `--batch_size` (optional): If the selected algorithm is a neural network, this parameter specifies the batch size. Default is 10.
+
+#### Optional Arguments
 
 ### Usage Example
 
