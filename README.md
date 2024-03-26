@@ -59,30 +59,30 @@ python ml_algorithms_runner.py --file_path <path_to_your_data.csv> --algorithm <
 - `--random_state`: The seed used by the random number generator (default: 42).
   
 ##### For the Neural Network algorithm, you can also specify:
--`--nn_epochs`: The number of epochs for training (default: 100).
+- `--nn_epochs`: The number of epochs for training (default: 100).
 - `--nn_batch_size`: The batch size during training (default: 10).
 - `--nn_layers`: The number of hidden layers (default: 2).
 - `--nn_neurons`: The number of neurons per hidden layer (default: 64).
  
 ##### Logistic Regression Specific Arguments
--`--lr_C`: Inverse of regularization strength; must be a positive float. Smaller values specify stronger regularization (default: 1.0).
--`--lr_penalty`: Specifies the norm used in the penalization (default: 'l2').
+- `--lr_C`: Inverse of regularization strength; must be a positive float. Smaller values specify stronger regularization (default: 1.0).
+- `--lr_penalty`: Specifies the norm used in the penalization (default: 'l2').
 
 ##### Decision Tree Specific Arguments
--`--dt_max_depth`: The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min_samples_split samples (default: None).
--`--dt_min_samples_split`: The minimum number of samples required to split an internal node (default: 2).
+- `--dt_max_depth`: The maximum depth of the tree. If None, then nodes are expanded until all leaves are pure or until all leaves contain less than min_samples_split samples (default: None).
+- `--dt_min_samples_split`: The minimum number of samples required to split an internal node (default: 2).
 
 ##### SVM (Support Vector Machine) Specific Arguments
--`--svm_C`: Regularization parameter. The strength of the regularization is inversely proportional to C. Must be strictly positive (default: 1.0).
--`--svm_kernel`: Specifies the kernel type to be used in the algorithm (default: 'rbf').
+- `--svm_C`: Regularization parameter. The strength of the regularization is inversely proportional to C. Must be strictly positive (default: 1.0).
+- `--svm_kernel`: Specifies the kernel type to be used in the algorithm (default: 'rbf').
 
 ##### KNN (K-Nearest Neighbors) Specific Arguments
--`--knn_n_neighbors`: Number of neighbors to use for kneighbors queries (default: 5).
--`--knn_metric`: The distance metric to use for the tree (default: 'minkowski').
+- `--knn_n_neighbors`: Number of neighbors to use for kneighbors queries (default: 5).
+- `--knn_metric`: The distance metric to use for the tree (default: 'minkowski').
 
 ##### GBM (Gradient Boosting Machine) Specific Arguments
--`--gbm_learning_rate`: Learning rate shrinks the contribution of each tree by learning_rate. There is a trade-off between learning_rate and n_estimators (default: 0.1).
--`--gbm_n_estimators`: The number of boosting stages to be run (default: 100).
+- `--gbm_learning_rate`: Learning rate shrinks the contribution of each tree by learning_rate. There is a trade-off between learning_rate and n_estimators (default: 0.1).
+- `--gbm_n_estimators`: The number of boosting stages to be run (default: 100).
 
 Additional optional arguments are available for other algorithms. Refer to the script's help for more details:
 ```bash
