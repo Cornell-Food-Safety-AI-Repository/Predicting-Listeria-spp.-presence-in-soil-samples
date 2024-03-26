@@ -59,7 +59,7 @@ python ml_algorithms_runner.py --file_path <path_to_your_data.csv> --algorithm <
 - `--random_state: The seed used by the random number generator (default: 42).
   
 For the Neural Network algorithm, you can also specify:
-- `--nn_epochs: The number of epochs for training (default: 100).
+`--nn_epochs: The number of epochs for training (default: 100).
 - `--nn_batch_size: The batch size during training (default: 10).
 - `--nn_layers: The number of hidden layers (default: 2).
 - `--nn_neurons: The number of neurons per hidden layer (default: 64).
