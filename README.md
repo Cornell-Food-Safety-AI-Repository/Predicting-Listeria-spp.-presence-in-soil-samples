@@ -55,16 +55,24 @@ python ml_algorithms_runner.py --file_path <path_to_your_data.csv> --algorithm <
 - `--algorithm` (required): The algorithm to use. Options include `logistic_regression`, `neural_network`, `decision_tree`, `svm`, `knn`, `gbm`.
 
 #### Optional Arguments
-
+- `--test_size: The proportion of the dataset to include in the test split (default: 0.2).
+- `--random_state: The seed used by the random number generator (default: 42).
+  
+For the Neural Network algorithm, you can also specify:
+- `--nn_epochs: The number of epochs for training (default: 100).
+- `--nn_batch_size: The batch size during training (default: 10).
+- `--nn_layers: The number of hidden layers (default: 2).
+- `--nn_neurons: The number of neurons per hidden layer (default: 64).
+  
+Additional optional arguments are available for other algorithms. Refer to the script's help for more details:
+```bash
+python ml_algorithms_runner.py --help
+```
 ### Usage Example
 
-If you want to use logistic regression on a file named `data.csv` with a test size of 0.25, use the following command:
+To run a Neural Network algorithm on data.csv with 3 hidden layers, each with 32 neurons, for 50 epochs and a batch size of 16:
 ```bash
-python script_name.py --file_path data.csv --algorithm logistic_regression --test_size 0.25
-```
-If your chosen algorithm is a neural network and you wish to set epochs to 200 and batch_size to 20, the command is:
-```bash
-python script_name.py --file_path data.csv --algorithm neural_network --epochs 200 --batch_size 20
+python ml_algorithms_runner.py --file_path data.csv --algorithm neural_network --nn_epochs 50 --nn_batch_size 16 --nn_layers 3 --nn_neurons 32
 ```
 Adjust the above commands according to your actual file paths and parameters.
 
