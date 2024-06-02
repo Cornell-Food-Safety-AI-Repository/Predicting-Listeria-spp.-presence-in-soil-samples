@@ -151,6 +151,12 @@ python name.py --file_path /path/to/your csv --test_size 0.2 --random_state 42
 - `--random_state`: Random seed for reproducibility (default is 42).
 
 ## Example Output
+### Model Performance Table
 
+![Model Performance Table](Images/model_performance_table.png)
+
+### Model Accuracy Comparison
+
+![Model Accuracy Comparison](Images/model_performance_bar.png)
 
 
