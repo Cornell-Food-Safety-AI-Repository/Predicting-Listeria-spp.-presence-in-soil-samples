@@ -131,3 +131,26 @@ The following table details the confusion matrix results for each machine learni
 
 <img src="ml_algorithms_performance_curve_vivid.png" width="600">
 <img src="ml_algorithms_confusion_matrix.png" width="600">
+
+# LazyPredict Method
+## Prerequisites
+
+- Python 3.6 or higher
+- Required Python packages (can be installed using `pip`):
+``` bash
+pip install pandas scikit-learn matplotlib lazypredict
+```
+
+## Usage
+``` bash
+python name.py --file_path /path/to/your csv --test_size 0.2 --random_state 42
+```
+### Command-line Arguments
+- `--file_path`: Path to the CSV file containing the dataset (required).
+- `--test_size`: Fraction of the dataset to be used as the test set (default is 0.2).
+- `--random_state`: Random seed for reproducibility (default is 42).
+
+## Example Output
+
+
+
