@@ -160,4 +160,4 @@ python name.py --file_path /path/to/your csv --test_size 0.2 --random_state 42
 ![Model Accuracy Comparison](Images/model_performance_bar.png)
 
 ### Model Comparison
-![Model Comparison](Images/output(1).png)
+![Model Comparison](Images/output.png)
