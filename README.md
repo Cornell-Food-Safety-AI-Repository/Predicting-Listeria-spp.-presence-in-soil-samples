@@ -144,7 +144,7 @@ pip install pandas scikit-learn matplotlib lazypredict
 
 ## Usage
 ``` bash
-python name.py --file_path /path/to/your csv --test_size 0.2 --random_state 42
+python LazyListeriaSoil.py --file_path /path/to/your csv --test_size 0.2 --random_state 42
 ```
 ### Command-line Arguments
 - `--file_path`: Path to the CSV file containing the dataset (required).
