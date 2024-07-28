@@ -9,7 +9,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 from keras.models import Sequential
-from keras.layers import Dense
+from keras.layers import Dense, Input
 
 def main():
    
@@ -25,14 +25,29 @@ def main():
     parser.add_argument('--nn_layers', type=int, default=2, help='Number of hidden layers for Neural Network')
     parser.add_argument('--nn_neurons', type=int, default=64, help='Number of neurons per hidden layer for Neural Network')
 
-    # Add additional parameters for other algorithms here as needed
-    # For example, Logistic Regression regularization strength and penalty
+    # Logistic Regression specific parameters
     parser.add_argument('--lr_C', type=float, default=1.0, help='Inverse of regularization strength for Logistic Regression')
     parser.add_argument('--lr_penalty', type=str, default='l2', choices=['l1', 'l2', 'elasticnet', 'none'], help='Penalty for Logistic Regression')
 
+    # Decision Tree specific parameters
+    parser.add_argument('--dt_max_depth', type=int, default=None, help='The maximum depth of the tree')
+    parser.add_argument('--dt_min_samples_split', type=int, default=2, help='The minimum number of samples required to split an internal node')
+
+    # SVM specific parameters
+    parser.add_argument('--svm_C', type=float, default=1.0, help='Regularization parameter for SVM')
+    parser.add_argument('--svm_kernel', type=str, default='rbf', help='Specifies the kernel type to be used in the SVM algorithm')
+
+    # KNN specific parameters
+    parser.add_argument('--knn_n_neighbors', type=int, default=5, help='Number of neighbors to use for kneighbors queries')
+    parser.add_argument('--knn_metric', type=str, default='minkowski', help='The distance metric to use for the KNN algorithm')
+
+    # GBM specific parameters
+    parser.add_argument('--gbm_learning_rate', type=float, default=0.1, help='Learning rate for GBM')
+    parser.add_argument('--gbm_n_estimators', type=int, default=100, help='The number of boosting stages to be run')
+
     args = parser.parse_args()
 
-    
+   
     df = pd.read_csv(args.file_path)
 
     
@@ -46,40 +61,40 @@ def main():
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
 
-
+   
     if args.algorithm == 'logistic_regression':
         model = LogisticRegression(C=args.lr_C, penalty=args.lr_penalty)
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
     elif args.algorithm == 'neural_network':
         model = Sequential()
-        model.add(Dense(args.nn_neurons, activation='relu', input_dim=X_train.shape[1]))
-        for _ in range(1, args.nn_layers):
+        model.add(Input(shape=(X_train.shape[1],)))
+        for _ in range(args.nn_layers):
             model.add(Dense(args.nn_neurons, activation='relu'))
         model.add(Dense(1, activation='sigmoid'))
         model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
         model.fit(X_train, y_train, epochs=args.nn_epochs, batch_size=args.nn_batch_size, verbose=1)
         y_pred = (model.predict(X_test) > 0.5).astype(int).flatten()
     elif args.algorithm == 'decision_tree':
-        model = DecisionTreeClassifier()
+        model = DecisionTreeClassifier(max_depth=args.dt_max_depth, min_samples_split=args.dt_min_samples_split)
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
     elif args.algorithm == 'svm':
-        model = SVC()
+        model = SVC(C=args.svm_C, kernel=args.svm_kernel)
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
     elif args.algorithm == 'knn':
-        model = KNeighborsClassifier()
+        model = KNeighborsClassifier(n_neighbors=args.knn_n_neighbors, metric=args.knn_metric)
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
     elif args.algorithm == 'gbm':
-        model = GradientBoostingClassifier()
+        model = GradientBoostingClassifier(learning_rate=args.gbm_learning_rate, n_estimators=args.gbm_n_estimators)
         model.fit(X_train, y_train)
         y_pred = model.predict(X_test)
     else:
         raise ValueError(f"Unsupported algorithm: {args.algorithm}")
 
-
+    
     accuracy = accuracy_score(y_test, y_pred)
     precision = precision_score(y_test, y_pred, zero_division=0)
     recall = recall_score(y_test, y_pred, zero_division=0)
