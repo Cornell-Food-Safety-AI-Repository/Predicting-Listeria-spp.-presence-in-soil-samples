@@ -154,7 +154,7 @@ python LazyListeriaSoil.py --file_path /path/to/your csv --test_size 0.2 --rando
 ## Example Output
 ### Model Performance Table
 
-![Model Performance Table](Images/model_performance_table.png)
+![Model Performance Table](Images/rounded_metrics_table.png)
 
 ### Model Accuracy Comparison
 
