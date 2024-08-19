@@ -158,7 +158,7 @@ python LazyListeriaSoil.py --file_path /path/to/your csv --test_size 0.2 --rando
 
 ### Model Accuracy Comparison
 
-![Model Accuracy Comparison](Images/output_sorted.png)
+![Model Accuracy Comparison](Images/outputnew.png)
 
 ### Model Comparison
 ![Model Comparison](Images/output.png)
