@@ -33,6 +33,7 @@ pip install -r requirements.txt
 4. svm: Support Vector Machine
 5. knn: K-Nearest Neighbors
 6. gbm: Gradient Boosting Machine
+7. 
 ## Dependencies
 This project is built using Python and relies on several libraries for data processing and machine learning:  
 1.Pandas  
@@ -44,14 +45,14 @@ This project is built using Python and relies on several libraries for data proc
 
 This script allows users to select different machine learning algorithms via command line parameters to train models and evaluate them on a specified dataset.
 
-## How to Run
+## Usage
 
 Use the following command line format to run this script:
 ```bash
 python ml_algorithms_runner.py --file_path <path_to_your_data.csv> --algorithm <algorithm_name> [options]
 
 ```
-### Parameter Explanation
+### Required Arguments
 - `--file_path` (required): The path to your CSV file.
 - `--algorithm` (required): The algorithm to use. Options include `logistic_regression`, `neural_network`, `decision_tree`, `svm`, `knn`, `gbm`.
 
@@ -134,7 +135,7 @@ The following table details the confusion matrix results for each machine learni
 <img src="ml_algorithms_confusion_matrix.png" width="600">
 
 # LazyPredict Method
-## Prerequisites
+## Dependencies
 
 - Python 3.6 or higher
 - Required Python packages (can be installed using `pip`):
