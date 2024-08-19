@@ -11,11 +11,11 @@ Please cite this paper when using this dataset.
 
 This project utilizes machine learning algorithms to analyze and predict Listeria contamination in food environments. Aimed at food safety researchers and public health officials, it provides a comprehensive toolkit for understanding patterns of Listeria outbreaks and formulating preventive measures. 
 ## Features
-- Dynamic Model Selection: Choose from multiple algorithms including Logistic Regression, Neural Networks, Decision Trees, SVM, KNN, and Gradient Boosting.
-- Customizable Parameters: Fine-tune model parameters such as regularization strength, number of epochs, and learning rate via command-line arguments.
-- Comprehensive Evaluation: Outputs key performance metrics including accuracy, precision, recall, F1 score, and confusion matrix.
-- Data Standardization: Automatically standardizes features to improve model performance.
-- Command Line Interface: Execute the script and specify parameters directly from the command line for flexible model training and evaluation.
+- **Dynamic Model Selection**: Choose from multiple algorithms including Logistic Regression, Neural Networks, Decision Trees, SVM, KNN, and Gradient Boosting.
+- **Customizable Parameters**: Fine-tune model parameters such as regularization strength, number of epochs, and learning rate via command-line arguments.
+- **Comprehensive Evaluation**: Outputs key performance metrics including accuracy, precision, recall, F1 score, and confusion matrix.
+- **Data Standardization**: Automatically standardizes features to improve model performance.
+- **Command Line Interface**: Execute the script and specify parameters directly from the command line for flexible model training and evaluation.
 ## Installation
 
 To get started with this project, follow these steps:
