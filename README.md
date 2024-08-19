@@ -33,7 +33,6 @@ pip install -r requirements.txt
 4. svm: Support Vector Machine
 5. knn: K-Nearest Neighbors
 6. gbm: Gradient Boosting Machine
-7. 
 ## Dependencies
 This project is built using Python and relies on several libraries for data processing and machine learning:  
 1.Pandas  
