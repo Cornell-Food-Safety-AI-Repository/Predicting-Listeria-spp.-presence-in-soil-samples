@@ -55,7 +55,7 @@ This script allows users to select different machine learning algorithms via com
 - `--file_path` (required): The path to your CSV file.
 - `--algorithm` (required): The algorithm to use. Options include `logistic_regression`, `neural_network`, `decision_tree`, `svm`, `knn`, `gbm`.
 
-#### Optional Arguments
+### Optional Arguments
 - `--test_size`: The proportion of the dataset to include in the test split (default: 0.2).
 - `--random_state`: The seed used by the random number generator (default: 42).
   
