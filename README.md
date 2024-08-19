@@ -17,18 +17,25 @@ This project utilizes machine learning algorithms to analyze and predict Listeri
 - **Data Standardization**: Automatically standardizes features to improve model performance.
 - **Command Line Interface**: Execute the script and specify parameters directly from the command line for flexible model training and evaluation.
 ## Installation
+## Dependencies
+This project is built using Python and relies on several libraries for data processing and machine learning:  
+1.Pandas  
+2.Numpy  
+3.Scikit-learn  
+4.Keras  
+5.TensorFlow
 
 To get started with this project, follow these steps:
 
-1. Clone the repository:
+1. Install the required Python packages:
+```bash
+pip install -r requirements.txt
+```
+2. Clone the repository:
 
 ```bash
 git clone https://github.com/FoodDatasets/ListeriaFoodEnvironment.git
 cd ListeriaFoodEnvironment
-```
-2. Install the required Python packages:
-```bash
-pip install -r requirements.txt
 ```
 
 ## Supported Algorithms
@@ -38,24 +45,12 @@ pip install -r requirements.txt
 4. svm: Support Vector Machine
 5. knn: K-Nearest Neighbors
 6. gbm: Gradient Boosting Machine
-## Dependencies
-This project is built using Python and relies on several libraries for data processing and machine learning:  
-1.Pandas  
-2.Numpy  
-3.Scikit-learn  
-4.Keras  
-5.TensorFlow  
-# Machine Learning Model Execution Guide
+
+## Machine Learning Model Execution Guide
 
 This script allows users to select different machine learning algorithms via command line parameters to train models and evaluate them on a specified dataset.
 
-## Usage
 
-Use the following command line format to run this script:
-```bash
-python ml_algorithms_runner.py --file_path <path_to_your_data.csv> --algorithm <algorithm_name> [options]
-
-```
 ### Required Arguments
 - `--file_path` (required): The path to your CSV file.
 - `--algorithm` (required): The algorithm to use. Options include `logistic_regression`, `neural_network`, `decision_tree`, `svm`, `knn`, `gbm`.
