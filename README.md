@@ -1,4 +1,4 @@
-# Listeria in soil
+# *Listeria* in soil
 
 🥬 This dataset contains the location, soil properties, climate, and land use for each soil sample tested for Listeria species. 
 
