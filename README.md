@@ -154,7 +154,34 @@ python LazyListeriaSoil.py --file_path /path/to/your csv --test_size 0.2 --rando
 ## Example Output
 ### Model Performance Table
 
-![Model Performance Table](Images/outputttable.png)
+| Model                          | Accuracy | Balanced Accuracy | ROC AUC | F1 Score | Time Taken | Sensitivity | Specificity |
+|--------------------------------|----------|-------------------|---------|----------|------------|-------------|-------------|
+| LGBMClassifier                 | 0.65     | 0.32              | None    | 0.62     | 0.40       | 0.32        | 0.91        |
+| BaggingClassifier              | 0.63     | 0.30              | None    | 0.59     | 0.07       | 0.30        | 0.91        |
+| RandomForestClassifier         | 0.62     | 0.31              | None    | 0.58     | 0.14       | 0.31        | 0.90        |
+| DecisionTreeClassifier         | 0.62     | 0.33              | None    | 0.62     | 0.01       | 0.28        | 0.93        |
+| ExtraTreesClassifier           | 0.61     | 0.34              | None    | 0.59     | 0.07       | 0.34        | 0.90        |
+| LabelPropagation               | 0.59     | 0.31              | None    | 0.59     | 0.02       | 0.27        | 0.92        |
+| LabelSpreading                 | 0.59     | 0.31              | None    | 0.59     | 0.03       | 0.27        | 0.92        |
+| SVC                            | 0.58     | 0.26              | None    | 0.53     | 0.01       | 0.26        | 0.88        |
+| LinearDiscriminantAnalysis     | 0.54     | 0.27              | None    | 0.53     | 0.01       | 0.23        | 0.90        |
+| RidgeClassifier                | 0.54     | 0.24              | None    | 0.48     | 0.01       | 0.24        | 0.87        |
+| RidgeClassifierCV              | 0.54     | 0.24              | None    | 0.48     | 0.01       | 0.24        | 0.87        |
+| CalibratedClassifierCV         | 0.53     | 0.22              | None    | 0.45     | 0.05       | 0.22        | 0.87        |
+| KNeighborsClassifier           | 0.53     | 0.27              | None    | 0.50     | 0.12       | 0.27        | 0.88        |
+| QuadraticDiscriminantAnalysis  | 0.53     | 0.29              | None    | 0.51     | 0.01       | 0.29        | 0.89        |
+| ExtraTreeClassifier            | 0.52     | 0.26              | None    | 0.50     | 0.00       | 0.22        | 0.90        |
+| LinearSVC                      | 0.52     | 0.24              | None    | 0.47     | 0.06       | 0.24        | 0.87        |
+| LogisticRegression             | 0.50     | 0.23              | None    | 0.46     | 0.01       | 0.23        | 0.87        |
+| PassiveAggressiveClassifier    | 0.50     | 0.27              | None    | 0.49     | 0.01       | 0.23        | 0.89        |
+| BernoulliNB                    | 0.44     | 0.26              | None    | 0.44     | 0.01       | 0.26        | 0.87        |
+| DummyClassifier                | 0.44     | 0.17              | None    | 0.27     | 0.00       | 0.17        | 0.83        |
+| Perceptron                     | 0.45     | 0.22              | None    | 0.43     | 0.01       | 0.19        | 0.88        |
+| SGDClassifier                  | 0.46     | 0.22              | None    | 0.43     | 0.01       | 0.19        | 0.88        |
+| AdaBoostClassifier             | 0.42     | 0.19              | None    | 0.37     | 0.11       | 0.19        | 0.85        |
+| GaussianNB                     | 0.27     | 0.21              | None    | 0.33     | 0.00       | 0.18        | 0.88        |
+| NearestCentroid                | 0.27     | 0.22              | None    | 0.31     | 0.00       | 0.19        | 0.88        |
+
 
 ### Model Accuracy Comparison
 
