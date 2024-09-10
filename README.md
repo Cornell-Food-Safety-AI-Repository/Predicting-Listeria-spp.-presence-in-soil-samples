@@ -105,27 +105,28 @@ Adjust the above commands according to your actual file paths and parameters.
 
 # Performance of Various Models on the Dataset
 
-| Algorithm              | Accuracy | Precision | Recall | F1 Score |
-|------------------------|----------|-----------|--------|----------|
-| Neural Network         | 0.811    | 0.848     | 0.806  | 0.827    |
-| Logistic Regression    | 0.747    | 0.767     | 0.784  | 0.776    |
-| SVM (Support Vector Machine) | 0.731    | 0.734     | 0.813  | 0.771    |
-| KNN (k-Nearest Neighbors)    | 0.707    | 0.736     | 0.741  | 0.738    |
-| Gradient Boosting Classifier | 0.811    | 0.723     | 0.922  | 0.810    |
-| Decision Tree              | 0.807    | 0.819     | 0.849  | 0.834    |
+| Algorithm                      | Accuracy | Precision | Recall  | F1 Score |
+| -------------------------------|----------|-----------|---------|----------|
+| Gradient Boosting Classifier    | 0.83     | 0.86      | 0.84    | 0.85     |
+| Neural Network                  | 0.80     | 0.82      | 0.83    | 0.82     |
+| Decision Tree                   | 0.80     | 0.86      | 0.77    | 0.81     |
+| Logistic Regression             | 0.76     | 0.77      | 0.81    | 0.79     |
+| SVM (Support Vector Machine)    | 0.72     | 0.72      | 0.83    | 0.77     |
+| KNN (k-Nearest Neighbors)       | 0.70     | 0.73      | 0.76    | 0.74     |
+
 
 # Confusion Matrix Results for Various ML Algorithms
 
 The following table details the confusion matrix results for each machine learning algorithm tested. These results provide insights into each model's ability to correctly predict the true positives and true negatives, as well as the instances of false positives and false negatives.
 
-| Algorithm | True Negatives | False Positives | False Negatives | True Positives |
-|-----------|----------------|-----------------|-----------------|----------------|
-| Neural Network | 90 | 20 | 27 | 112 |
-| Logistic Regression | 77 | 33 | 30 | 109 |
-| SVM (Support Vector Machine) | 69 | 41 | 26 | 113 |
-| KNN (k-Nearest Neighbors) | 73 | 37 | 36 | 103 |
-| Gradient Boosting Classifier | 84 | 26 | 21 | 118 |
-| Decision Tree | 90 | 20 | 28 | 111 |
+| Algorithm                      | True Negatives | False Positives | False Negatives | True Positives |
+| -------------------------------|----------------|-----------------|-----------------|----------------|
+| Gradient Boosting Classifier    | 45             | 10              | 11              | 59             |
+| Neural Network                  | 42             | 13              | 12              | 58             |
+| Decision Tree                   | 46             | 9               | 16              | 54             |
+| Logistic Regression             | 38             | 17              | 13              | 57             |
+| SVM (Support Vector Machine)    | 32             | 23              | 12              | 58             |
+| KNN (k-Nearest Neighbors)       | 35             | 20              | 17              | 53             |
 
 *Note: These results are indicative of the model's performance on the dataset, reflecting the balance between sensitivity (recall) and specificity.*
 
