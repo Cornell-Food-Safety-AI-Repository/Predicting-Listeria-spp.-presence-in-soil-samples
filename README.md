@@ -107,12 +107,13 @@ Adjust the above commands according to your actual file paths and parameters.
 
 | Algorithm           | Avg ROC AUC (Cross-validation) | Accuracy | Precision | Recall | F1 Score | ROC AUC (Test Set) |
 |---------------------|-------------------------------|----------|-----------|--------|----------|--------------------|
-| GradientBoosting     | 0.9349                        | 0.832    | 0.8551    | 0.8429 | 0.8489   | 0.8305             |
-| SVM                 | 0.8468                        | 0.720    | 0.7160    | 0.8286 | 0.7682   | 0.7052             |
-| LogisticRegression   | 0.8343                        | 0.760    | 0.7703    | 0.8143 | 0.7917   | 0.7526             |
-| Neural Network       | 0.8305                        | 0.832    | 0.8551    | 0.8429 | 0.8489   | 0.8305             |
-| KNN                 | 0.8228                        | 0.704    | 0.7260    | 0.7571 | 0.7413   | 0.6968             |
-| DecisionTree         | 0.7947                        | 0.792    | 0.8438    | 0.7714 | 0.8060   | 0.7948             |
+| GradientBoosting     | 0.93                          | 0.83     | 0.86      | 0.84   | 0.85     | 0.83               |
+| SVM                 | 0.85                          | 0.72     | 0.72      | 0.83   | 0.77     | 0.71               |
+| LogisticRegression   | 0.83                          | 0.76     | 0.77      | 0.81   | 0.79     | 0.75               |
+| Neural Network       | 0.83                          | 0.83     | 0.86      | 0.84   | 0.85     | 0.83               |
+| KNN                 | 0.82                          | 0.70     | 0.73      | 0.76   | 0.74     | 0.70               |
+| DecisionTree         | 0.79                          | 0.79     | 0.84      | 0.77   | 0.81     | 0.79               |
+
 
 
 
