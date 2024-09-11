@@ -111,8 +111,9 @@ Adjust the above commands according to your actual file paths and parameters.
 | SVM                 | 0.8468                        | 0.720    | 0.7160    | 0.8286 | 0.7682   | 0.7052             |
 | LogisticRegression   | 0.8343                        | 0.760    | 0.7703    | 0.8143 | 0.7917   | 0.7526             |
 | Neural Network       | 0.8305                        | 0.832    | 0.8551    | 0.8429 | 0.8489   | 0.8305             |
-| DecisionTree         | 0.7947                        | 0.792    | 0.8438    | 0.7714 | 0.8060   | 0.7948             |
 | KNN                 | 0.8228                        | 0.704    | 0.7260    | 0.7571 | 0.7413   | 0.6968             |
+| DecisionTree         | 0.7947                        | 0.792    | 0.8438    | 0.7714 | 0.8060   | 0.7948             |
+
 
 
 
