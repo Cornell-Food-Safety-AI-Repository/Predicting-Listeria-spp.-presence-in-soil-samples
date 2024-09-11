@@ -134,6 +134,7 @@ The following table details the confusion matrix results for each machine learni
 <img src="ml_algorithms_performance_curve_vivid.png" width="600">
 <img src="ml_algorithms_confusion_matrix.png" width="600">
 <img src="Images/output_roc.png" width="600">
+
 # LazyPredict Method
 ## Dependencies
 
