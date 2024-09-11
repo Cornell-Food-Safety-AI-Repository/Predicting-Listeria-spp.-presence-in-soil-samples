@@ -105,28 +105,30 @@ Adjust the above commands according to your actual file paths and parameters.
 
 # Performance of Various Models on the Dataset
 
-| Algorithm                      | Accuracy | Precision | Recall  | F1 Score |
-| -------------------------------|----------|-----------|---------|----------|
-| Gradient Boosting Classifier    | 0.83     | 0.86      | 0.84    | 0.85     |
-| Neural Network                  | 0.80     | 0.82      | 0.83    | 0.82     |
-| Decision Tree                   | 0.80     | 0.86      | 0.77    | 0.81     |
-| Logistic Regression             | 0.76     | 0.77      | 0.81    | 0.79     |
-| SVM (Support Vector Machine)    | 0.72     | 0.72      | 0.83    | 0.77     |
-| KNN (k-Nearest Neighbors)       | 0.70     | 0.73      | 0.76    | 0.74     |
+| Algorithm           | Avg ROC AUC (Cross-validation) | Accuracy | Precision | Recall | F1 Score | ROC AUC (Test Set) |
+|---------------------|-------------------------------|----------|-----------|--------|----------|--------------------|
+| GradientBoosting     | 0.9349                        | 0.832    | 0.8551    | 0.8429 | 0.8489   | 0.8305             |
+| SVM                 | 0.8468                        | 0.720    | 0.7160    | 0.8286 | 0.7682   | 0.7052             |
+| LogisticRegression   | 0.8343                        | 0.760    | 0.7703    | 0.8143 | 0.7917   | 0.7526             |
+| Neural Network       | 0.8305                        | 0.832    | 0.8551    | 0.8429 | 0.8489   | 0.8305             |
+| DecisionTree         | 0.7947                        | 0.792    | 0.8438    | 0.7714 | 0.8060   | 0.7948             |
+| KNN                 | 0.8228                        | 0.704    | 0.7260    | 0.7571 | 0.7413   | 0.6968             |
+
 
 
 # Confusion Matrix Results for Various ML Algorithms
 
 The following table details the confusion matrix results for each machine learning algorithm tested. These results provide insights into each model's ability to correctly predict the true positives and true negatives, as well as the instances of false positives and false negatives.
 
-| Algorithm                      | True Negatives | False Positives | False Negatives | True Positives |
-| -------------------------------|----------------|-----------------|-----------------|----------------|
-| Gradient Boosting Classifier    | 45             | 10              | 11              | 59             |
-| Neural Network                  | 42             | 13              | 12              | 58             |
-| Decision Tree                   | 46             | 9               | 16              | 54             |
-| Logistic Regression             | 38             | 17              | 13              | 57             |
-| SVM (Support Vector Machine)    | 32             | 23              | 12              | 58             |
-| KNN (k-Nearest Neighbors)       | 35             | 20              | 17              | 53             |
+| Algorithm           | True Positive (TP) | False Positive (FP) | False Negative (FN) | True Negative (TN) |
+|---------------------|--------------------|---------------------|---------------------|--------------------|
+| GradientBoosting     | 59                 | 10                  | 11                  | 45                 |
+| SVM                 | 58                 | 23                  | 12                  | 32                 |
+| LogisticRegression   | 57                 | 17                  | 13                  | 38                 |
+| Neural Network       | 59                 | 10                  | 11                  | 45                 |
+| DecisionTree         | 54                 | 10                  | 16                  | 45                 |
+| KNN                 | 53                 | 20                  | 17                  | 35                 |
+
 
 *Note: These results are indicative of the model's performance on the dataset, reflecting the balance between sensitivity (recall) and specificity.*
 
