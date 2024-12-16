@@ -13,12 +13,12 @@ Please cite this paper when using this dataset.
 - Classification for predicting the presence of Listeria spp. in the U.S. soil samples
 
 **Predictor and outcome variables**:
-- The detailed description of metadata for predictor and outcome variables is accessible under the file name "Listeria_Metadata.csv"
+- The detailed description of metadata for predictor and outcome variables is accessible under the file name "ListeriaSoil_Metadata.csv"
 - The cleaned dataset is accessible under the file name "ListeriaSoil_clean.csv"
 
 **Evaluation metrics**:
 - The classification model was evaluated on ROC AUC, sensitivity, specificity, and F1 score
-- The specific packages for calculating these metrics are accessible in the model training script under the file name "ml_algorithms_runner.py"
+- The specific packages for calculating these metrics are accessible in the model training script under the file name "Customize_script.py"
 
 ## Installation
 ## Dependencies
