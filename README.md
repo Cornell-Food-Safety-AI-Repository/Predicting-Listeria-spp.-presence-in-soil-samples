@@ -9,13 +9,17 @@ Please cite this paper when using this dataset.
 
 ## Overview
 
-This project utilizes machine learning algorithms to analyze and predict Listeria contamination in food environments. Aimed at food safety researchers and public health officials, it provides a comprehensive toolkit for understanding patterns of Listeria outbreaks and formulating preventive measures. 
-## Features
-- **Dynamic Model Selection**: Choose from multiple algorithms including Logistic Regression, Neural Networks, Decision Trees, SVM, KNN, and Gradient Boosting.
-- **Customizable Parameters**: Fine-tune model parameters such as regularization strength, number of epochs, and learning rate via command-line arguments.
-- **Comprehensive Evaluation**: Outputs key performance metrics including accuracy, precision, recall, F1 score, and confusion matrix.
-- **Data Standardization**: Automatically standardizes features to improve model performance.
-- **Command Line Interface**: Execute the script and specify parameters directly from the command line for flexible model training and evaluation.
+**Prediction task**:
+- Classification for predicting the presence of Listeria spp. in the U.S. soil samples
+
+**Predictor and outcome variables**:
+- The detailed description of metadata for predictor and outcome variables is accessible under the file name "Listeria_Metadata.csv"
+- The cleaned dataset is accessible under the file name "ListeriaSoil_clean.csv"
+
+**Evaluation metrics**:
+- The classification model was evaluated on ROC AUC, sensitivity, specificity, and F1 score
+- The specific packages for calculating these metrics are accessible in the model training script under the file name "ml_algorithms_runner.py"
+
 ## Installation
 ## Dependencies
 This project is built using Python and relies on several libraries for data processing and machine learning:  
